@@ -117,7 +117,7 @@ function Trans() {
         LastTwoDigits = numberStr.substring(i+2,i+4);
         FirstImage = NumToImages[FirstTwoDigits];
         SecondImage = NumToImages[LastTwoDigits];
-        OutputHtml += `${count}. (${FirstTwoDigits},${LastTwoDigits}) -> (${FirstImage},${SecondImage})<br>`
+        OutputHtml += `${count}. (${FirstTwoDigits}, ${LastTwoDigits}) -> (${FirstImage}, ${SecondImage})<br>`
         i+= 3;
     }
     document.getElementById('result').innerHTML = OutputHtml;
